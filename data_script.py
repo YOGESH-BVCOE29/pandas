@@ -8,4 +8,4 @@ print(df)
 # print(df)
 # read data from a json file
 js = pd.read_json("C:\\Users\\hp\\OneDrive\\Desktop\\pandas\\sample_Data.json")
-print(js)    
+print(js)
