@@ -23,7 +23,12 @@ df.loc[0, "salary"] = 88000
 print(df)
 # m2
 # increasing salaries by 5 percent
+df['salary'] = df['salary'] *0.05
+print(df)
 
-
-
-
+# removing columns by using drop method 
+# syntax = df.drop(columns = ["column_name"], inplace = true )
+df.drop(columns=["perf_score"], inplace=True)
+print(df)
+# removing multiple columns
+# df.drop(columns=["column1", "column2"], inplace=True)
