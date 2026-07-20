@@ -15,3 +15,13 @@ print(df)
 print(df.isnull())
 # how to find that how many value are missing in column = isnull().sum()
 print(df.isnull().sum())
+# how to drop missing data .
+# dropna method 
+# df.dropna(axis = 0, inplace = True) # axis= 0 fro rows drop 
+# print(df)
+# how to fill 
+#fillna(value, inplace = True) method 
+df["age"] = df["age"].fillna(0)
+print(df)
+
+
