@@ -23,5 +23,29 @@ print(df.isnull().sum())
 #fillna(value, inplace = True) method 
 df["age"] = df["age"].fillna(0)
 print(df)
+# INTERPOLATION = filling estimated values in place of missing values like
+'''
+10
+20
+nan # here estimated value will be 30
+40
+50
+type of interpolation
+linear, polynomial, time etc see more from chatgpt
+use interpolation ? 
+1= preserve data integrity
+2= smooth trends 
+3= avoid data loss 
+USE interpolate() method 
+'''
+data1 = {
+'name' : ['ram', 'shyam', 'dhanshyam', 'aditi', 'jagdish', 'raj', 'jagi', 'yogesh'],
+'age' : [10, None, 16, 28, 24, 14, 36, 30],
+'salary': [50000, None, 45000, 66000, 25000, 26000, 33000, 88000], 
+'perf_score' : [85, None, 88, 99, 96, 66, 77, 78]
+}
+bf = pd.DataFrame(data)
+print(bf)
+bf.interpolate(method="linear", axis=0, inplace=True)
 
 
