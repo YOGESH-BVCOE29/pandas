@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import pandas as pd 
 data = {
 "name" :["arun", 'arjun', 'varun', 'tarun', 'yogesh'],
@@ -38,14 +37,4 @@ df_merged1 = pd.merge(df_customers, df_orders, on="customer_id", how="outer")
 print("outer join")
 print(df_merged1)
 # try all joins
-=======
-import pandas as pd 
-data = {
-"name" :["arun", 'arjun', 'varun', 'tarun', 'yogesh'],
-"age":[28, 20, 33, 28, 19],
-"salary":[10000, 20000, 30000, 55000, 90000]
-}
-df = pd.DataFrame(data)
-grouped = df.groupby('age')["salary"].sum()
-print(grouped)
->>>>>>> 674d231207702f980c5e44c2643ec6528826c2cd
+      
